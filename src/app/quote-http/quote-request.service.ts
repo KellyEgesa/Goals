@@ -14,13 +14,14 @@ export class QuoteRequestService {
   }
 
   quoteRequest() {
+    let apiKey = environment.apiUrl;
     interface ApiResponse {
       quote: string;
       author: string;
     }
     let promise = new Promise((resolve, reject) => {
       this.http
-        .get<ApiResponse>(environment.apiUrl)
+        .get<ApiResponse>(apiKey)
         .toPromise()
         .then(
           (response) => {
