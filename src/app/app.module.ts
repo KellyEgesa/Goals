@@ -18,6 +18,7 @@ import { DateCountPipe } from './date-count.pipe';
 
 import { NgProgressModule } from '@ngx-progressbar/core';
 import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+import { FormComponentComponent } from './form-component/form-component.component';
 
 const routes: Routes = [
   { path: 'goals', component: GoalComponent },
@@ -38,6 +39,7 @@ const routes: Routes = [
     AboutComponent,
     NavbarComponent,
     NotFoundComponent,
+    FormComponentComponent,
   ],
   imports: [
     BrowserModule,
